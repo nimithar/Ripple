@@ -11,7 +11,7 @@ websocket.on('open', () => {
 	websocket.send('{"command":"subscribe","id":0,"streams":["ledger"]}');
 });
 
-// Ledger Close events
+// Ledger Closed events
 websocket.on('message', message => {
 	console.log('Message', message);
 });
